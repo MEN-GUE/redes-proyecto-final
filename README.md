@@ -68,3 +68,17 @@ La guía paso a paso para la presentación está en [TUTORIAL.md](TUTORIAL.md).
 - `vm-ventas-1 → vm-ventas-2`: 4/4 paquetes, 0 % de pérdida ([evidencia](evidencias/03-ping-ventas1-a-ventas2.txt))
 - `vm-ventas-2 → vm-ventas-1`: 4/4 paquetes, 0 % de pérdida ([evidencia](evidencias/04-ping-ventas2-a-ventas1.txt))
 - `vm-visitas-1 → vm-ventas-1`: 0/4 paquetes, 100 % de pérdida, bloqueado por la segmentación ([evidencia](evidencias/06-ping-visitas-a-ventas.txt))
+
+## Capturas de la consola de GCP
+
+**Subredes de `entodata-vpc`** con sus puertas de enlace y el acceso privado a Google. Los rangos de IP de cada subred están en [config/subredes.yaml](config/subredes.yaml).
+
+![Subredes](evidencias/capturas/captura-1-subredes.png)
+
+**Reglas de firewall de la VPC.** Los rangos de origen y destino de cada regla están en [config/firewall.yaml](config/firewall.yaml).
+
+![Firewall](evidencias/capturas/captura-2-firewall.png)
+
+**Instancias de prueba** con su IP interna fija y sin IP externa.
+
+![Instancias](evidencias/capturas/captura-3-instancias.png)

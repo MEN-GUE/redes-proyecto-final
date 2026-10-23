@@ -1,6 +1,6 @@
 ---
 canIpForward: false
-cpuPlatform: Intel Broadwell
+cpuPlatform: AMD Rome
 creationTimestamp: '2026-10-22T17:23:16.599-07:00'
 deletionProtection: false
 disks:
@@ -31,7 +31,8 @@ labelFingerprint: PDmBc6F9pJo=
 labels:
   fase: '1'
   proyecto: entodata
-lastStartTimestamp: '2026-10-22T17:23:25.554-07:00'
+lastStartTimestamp: '2026-10-22T18:04:33.533-07:00'
+lastStopTimestamp: '2026-10-22T18:00:52.043-07:00'
 machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
 metadata:
   fingerprint: QirlaKwlK84=
@@ -70,7 +71,7 @@ tags:
 zone: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a
 ---
 canIpForward: false
-cpuPlatform: Intel Broadwell
+cpuPlatform: AMD Rome
 creationTimestamp: '2026-10-22T17:23:30.990-07:00'
 deletionProtection: false
 disks:
@@ -101,7 +102,8 @@ labelFingerprint: PDmBc6F9pJo=
 labels:
   fase: '1'
   proyecto: entodata
-lastStartTimestamp: '2026-10-22T17:23:43.057-07:00'
+lastStartTimestamp: '2026-10-22T18:04:14.844-07:00'
+lastStopTimestamp: '2026-10-22T18:00:51.698-07:00'
 machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
 metadata:
   fingerprint: QirlaKwlK84=
@@ -140,7 +142,7 @@ tags:
 zone: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a
 ---
 canIpForward: false
-cpuPlatform: Intel Broadwell
+cpuPlatform: AMD Rome
 creationTimestamp: '2026-10-22T17:23:49.408-07:00'
 deletionProtection: false
 disks:
@@ -171,7 +173,8 @@ labelFingerprint: PDmBc6F9pJo=
 labels:
   fase: '1'
   proyecto: entodata
-lastStartTimestamp: '2026-10-22T17:24:00.973-07:00'
+lastStartTimestamp: '2026-10-22T18:04:14.519-07:00'
+lastStopTimestamp: '2026-10-22T18:00:52.053-07:00'
 machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
 metadata:
   fingerprint: QirlaKwlK84=
