@@ -1,0 +1,100 @@
+---
+allowed:
+- IPProtocol: tcp
+  ports:
+  - '22'
+creationTimestamp: '2026-10-22T17:22:59.895-07:00'
+description: SSH administrativo solo a traves de Google IAP
+direction: INGRESS
+disabled: false
+id: '1038121846470809100'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: entodata-allow-iap-ssh
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/firewalls/entodata-allow-iap-ssh
+sourceRanges:
+- 35.235.240.0/20
+---
+allowed:
+- IPProtocol: icmp
+creationTimestamp: '2026-10-22T17:22:31.482-07:00'
+description: Ping entre equipos de Ventas
+destinationRanges:
+- 10.10.0.64/27
+direction: INGRESS
+disabled: false
+id: '1245531276098082344'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: entodata-allow-icmp-ventas
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/firewalls/entodata-allow-icmp-ventas
+sourceRanges:
+- 10.10.0.64/27
+---
+allowed:
+- IPProtocol: icmp
+- IPProtocol: tcp
+  ports:
+  - '22'
+creationTimestamp: '2026-10-22T17:22:42.118-07:00'
+description: TI administra toda la red (ping y SSH)
+direction: INGRESS
+disabled: false
+id: '7369762767377995326'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: entodata-allow-ti-admin
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/firewalls/entodata-allow-ti-admin
+sourceRanges:
+- 10.10.0.96/27
+---
+allowed:
+- IPProtocol: tcp
+  ports:
+  - '443'
+creationTimestamp: '2026-10-22T17:22:50.665-07:00'
+description: Ventas consume la API/IA del Data Center por HTTPS
+destinationRanges:
+- 10.10.0.128/28
+direction: INGRESS
+disabled: false
+id: '4650165385079232053'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: entodata-allow-ventas-dc-https
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/firewalls/entodata-allow-ventas-dc-https
+sourceRanges:
+- 10.10.0.64/27
+---
+creationTimestamp: '2026-10-22T17:22:21.762-07:00'
+denied:
+- IPProtocol: all
+description: Visitas no puede alcanzar Ventas, TI ni Data Center
+destinationRanges:
+- 10.10.0.64/27
+- 10.10.0.96/27
+- 10.10.0.128/28
+direction: INGRESS
+disabled: false
+id: '4742209789817722450'
+kind: compute#firewall
+logConfig:
+  enable: false
+name: entodata-deny-visitas-internas
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 900
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/firewalls/entodata-deny-visitas-internas
+sourceRanges:
+- 10.10.0.0/26

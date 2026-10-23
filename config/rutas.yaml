@@ -1,0 +1,55 @@
+---
+creationTimestamp: '2026-10-22T17:20:40.295-07:00'
+description: Default route to the Internet.
+destRange: 0.0.0.0/0
+id: '9028107308889478839'
+kind: compute#route
+name: default-route-564519ca93435e71
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+nextHopGateway: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/gateways/default-internet-gateway
+priority: 1000
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/routes/default-route-564519ca93435e71
+---
+creationTimestamp: '2026-10-22T17:21:06.818-07:00'
+description: Default local route to the subnetwork 10.10.0.64/27.
+destRange: 10.10.0.64/27
+id: '2257942594903807645'
+kind: compute#route
+name: default-route-r-760a0132a4363df3
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+nextHopNetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 0
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/routes/default-route-r-760a0132a4363df3
+---
+creationTimestamp: '2026-10-22T17:21:19.772-07:00'
+description: Default local route to the subnetwork 10.10.0.96/27.
+destRange: 10.10.0.96/27
+id: '3883944722711385744'
+kind: compute#route
+name: default-route-r-83858f553fd57e42
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+nextHopNetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 0
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/routes/default-route-r-83858f553fd57e42
+---
+creationTimestamp: '2026-10-22T17:20:53.885-07:00'
+description: Default local route to the subnetwork 10.10.0.0/26.
+destRange: 10.10.0.0/26
+id: '6470008672674584202'
+kind: compute#route
+name: default-route-r-98b69849bf269b41
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+nextHopNetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 0
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/routes/default-route-r-98b69849bf269b41
+---
+creationTimestamp: '2026-10-22T17:22:05.272-07:00'
+description: Default local route to the subnetwork 10.10.0.128/28.
+destRange: 10.10.0.128/28
+id: '1836326640665695810'
+kind: compute#route
+name: default-route-r-f65cec0e582d10cf
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+nextHopNetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+priority: 0
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/routes/default-route-r-f65cec0e582d10cf

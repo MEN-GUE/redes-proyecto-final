@@ -1,0 +1,19 @@
+autoCreateSubnetworks: false
+creationTimestamp: '2026-10-22T17:20:34.014-07:00'
+description: VPC de EntoData - Proyecto Final Redes Fase 1
+id: '9098078437879781054'
+kind: compute#network
+name: entodata-vpc
+networkFirewallPolicyEnforcementOrder: AFTER_CLASSIC_FIREWALL
+routingConfig:
+  bgpBestPathSelectionMode: LEGACY
+  routingMode: REGIONAL
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+selfLinkWithId: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/9098078437879781054
+subnetworks:
+- https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-datacenter
+- https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ventas
+- https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-visitas
+- https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ti
+x_gcloud_bgp_routing_mode: REGIONAL
+x_gcloud_subnet_mode: CUSTOM

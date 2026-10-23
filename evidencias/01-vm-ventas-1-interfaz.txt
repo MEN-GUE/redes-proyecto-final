@@ -1,0 +1,11 @@
+# EntoData - Fase 1 | 2026-10-23 00:25:20 UTC
+# VM: vm-ventas-1  (zona us-central1-a, proyecto jf-redes-mcp-2026)
+$ hostname; ip -4 addr show ens4; ip route
+vm-ventas-1
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    altname enp0s4
+    inet 10.10.0.66/32 metric 100 scope global dynamic ens4
+       valid_lft 3510sec preferred_lft 3510sec
+default via 10.10.0.65 dev ens4 proto dhcp src 10.10.0.66 metric 100 
+10.10.0.65 dev ens4 proto dhcp scope link src 10.10.0.66 metric 100 
+169.254.169.254 via 10.10.0.65 dev ens4 proto dhcp src 10.10.0.66 metric 100 

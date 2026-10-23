@@ -1,0 +1,32 @@
+# --- Configuración local y secretos ---
+.env
+.env.*
+!.env.example
+
+# --- Credenciales de Google Cloud / SSH ---
+google_compute_engine
+google_compute_engine.pub
+*.pem
+*.key
+*.p12
+application_default_credentials.json
+*credentials*.json
+service-account*.json
+*-sa-key*.json
+
+# --- Terraform (fases siguientes) ---
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# --- Archivos temporales de Office / sistema / editores ---
+~$*
+.~lock.*#
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

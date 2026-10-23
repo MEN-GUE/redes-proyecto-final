@@ -1,0 +1,32 @@
+== VPC ==
+NAME          SUBNET_MODE  BGP_ROUTING_MODE  AUTO_CREATE_SUBNETWORKS
+entodata-vpc  CUSTOM       REGIONAL          False
+
+== Subredes ==
+NAME               REGION       RANGE           GATEWAY_ADDRESS  PRIVATE_IP_GOOGLE_ACCESS
+subnet-datacenter  us-central1  10.10.0.128/28  10.10.0.129      True
+subnet-ti          us-central1  10.10.0.96/27   10.10.0.97       False
+subnet-ventas      us-central1  10.10.0.64/27   10.10.0.65       False
+subnet-visitas     us-central1  10.10.0.0/26    10.10.0.1        False
+
+== Firewall ==
+NAME                            DIRECTION  PRIORITY  SOURCE_RANGES    DESTINATION_RANGES                          ALLOW        DENY
+entodata-deny-visitas-internas  INGRESS    900       10.10.0.0/26     10.10.0.64/27,10.10.0.96/27,10.10.0.128/28               all
+entodata-allow-iap-ssh          INGRESS    1000      35.235.240.0/20                                              tcp:22
+entodata-allow-icmp-ventas      INGRESS    1000      10.10.0.64/27    10.10.0.64/27                               icmp
+entodata-allow-ti-admin         INGRESS    1000      10.10.0.96/27                                                icmp,tcp:22
+entodata-allow-ventas-dc-https  INGRESS    1000      10.10.0.64/27    10.10.0.128/28                              tcp:443
+
+== Rutas ==
+NAME                              DEST_RANGE      NEXT_HOP_GATEWAY          NEXT_HOP_NETWORK  PRIORITY
+default-route-564519ca93435e71    0.0.0.0/0       default-internet-gateway                    1000
+default-route-r-760a0132a4363df3  10.10.0.64/27                             entodata-vpc      0
+default-route-r-83858f553fd57e42  10.10.0.96/27                             entodata-vpc      0
+default-route-r-98b69849bf269b41  10.10.0.0/26                              entodata-vpc      0
+default-route-r-f65cec0e582d10cf  10.10.0.128/28                            entodata-vpc      0
+
+== Instancias ==
+NAME          ZONE           MACHINE_TYPE  SUBNETWORK      NETWORK_IP  STATUS
+vm-ventas-1   us-central1-a  e2-micro      subnet-ventas   10.10.0.66  RUNNING
+vm-ventas-2   us-central1-a  e2-micro      subnet-ventas   10.10.0.67  RUNNING
+vm-visitas-1  us-central1-a  e2-micro      subnet-visitas  10.10.0.2   RUNNING

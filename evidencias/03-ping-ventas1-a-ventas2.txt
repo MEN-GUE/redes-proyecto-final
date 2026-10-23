@@ -1,0 +1,12 @@
+# EntoData - Fase 1 | 2026-10-23 00:25:27 UTC
+# VM: vm-ventas-1  (zona us-central1-a, proyecto jf-redes-mcp-2026)
+$ ping -c 4 10.10.0.67
+PING 10.10.0.67 (10.10.0.67) 56(84) bytes of data.
+64 bytes from 10.10.0.67: icmp_seq=1 ttl=64 time=1.49 ms
+64 bytes from 10.10.0.67: icmp_seq=2 ttl=64 time=0.279 ms
+64 bytes from 10.10.0.67: icmp_seq=3 ttl=64 time=0.273 ms
+64 bytes from 10.10.0.67: icmp_seq=4 ttl=64 time=0.430 ms
+
+--- 10.10.0.67 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3049ms
+rtt min/avg/max/mdev = 0.273/0.617/1.486/0.505 ms

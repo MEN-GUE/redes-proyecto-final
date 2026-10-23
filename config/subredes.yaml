@@ -1,0 +1,68 @@
+---
+allowSubnetCidrRoutesOverlap: false
+creationTimestamp: '2026-10-22T17:22:03.272-07:00'
+description: Data Center - 5 servidores (IA, BD, API)
+fingerprint: 8gZxMwbpBCU=
+gatewayAddress: 10.10.0.129
+id: '7830461626929583684'
+ipCidrRange: 10.10.0.128/28
+kind: compute#subnetwork
+name: subnet-datacenter
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+privateIpGoogleAccess: true
+privateIpv6GoogleAccess: DISABLE_GOOGLE_ACCESS
+purpose: PRIVATE
+region: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-datacenter
+stackType: IPV4_ONLY
+---
+allowSubnetCidrRoutesOverlap: false
+creationTimestamp: '2026-10-22T17:21:17.605-07:00'
+description: Tecnologia e Innovacion (TI) - 15 personas
+fingerprint: 3eNkDsY846w=
+gatewayAddress: 10.10.0.97
+id: '3932863296406230674'
+ipCidrRange: 10.10.0.96/27
+kind: compute#subnetwork
+name: subnet-ti
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+privateIpGoogleAccess: false
+privateIpv6GoogleAccess: DISABLE_GOOGLE_ACCESS
+purpose: PRIVATE
+region: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ti
+stackType: IPV4_ONLY
+---
+allowSubnetCidrRoutesOverlap: false
+creationTimestamp: '2026-10-22T17:21:04.157-07:00'
+description: Equipo de Campo (Ventas) - 25 personas
+fingerprint: hENlDT5LXbA=
+gatewayAddress: 10.10.0.65
+id: '4395219893074990751'
+ipCidrRange: 10.10.0.64/27
+kind: compute#subnetwork
+name: subnet-ventas
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+privateIpGoogleAccess: false
+privateIpv6GoogleAccess: DISABLE_GOOGLE_ACCESS
+purpose: PRIVATE
+region: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ventas
+stackType: IPV4_ONLY
+---
+allowSubnetCidrRoutesOverlap: false
+creationTimestamp: '2026-10-22T17:20:51.869-07:00'
+description: Red de visitas - 50 hosts - aislada de la red interna
+fingerprint: OzXpOtIj3GA=
+gatewayAddress: 10.10.0.1
+id: '24628509439104652'
+ipCidrRange: 10.10.0.0/26
+kind: compute#subnetwork
+name: subnet-visitas
+network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+privateIpGoogleAccess: false
+privateIpv6GoogleAccess: DISABLE_GOOGLE_ACCESS
+purpose: PRIVATE
+region: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-visitas
+stackType: IPV4_ONLY

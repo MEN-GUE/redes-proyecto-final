@@ -1,0 +1,210 @@
+---
+canIpForward: false
+cpuPlatform: Intel Broadwell
+creationTimestamp: '2026-10-22T17:23:16.599-07:00'
+deletionProtection: false
+disks:
+- architecture: X86_64
+  autoDelete: true
+  boot: true
+  deviceName: persistent-disk-0
+  diskSizeGb: '10'
+  guestOsFeatures:
+  - type: UEFI_COMPATIBLE
+  - type: VIRTIO_SCSI_MULTIQUEUE
+  - type: GVNIC
+  - type: SEV_CAPABLE
+  - type: SEV_LIVE_MIGRATABLE_V2
+  - type: SUSPEND_SAFE_FPR
+  index: 0
+  interface: SCSI
+  kind: compute#attachedDisk
+  licenses:
+  - https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm
+  mode: READ_WRITE
+  source: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/disks/vm-ventas-1
+  type: PERSISTENT
+fingerprint: 8iO35soZjf8=
+id: '5366223277561157147'
+kind: compute#instance
+labelFingerprint: PDmBc6F9pJo=
+labels:
+  fase: '1'
+  proyecto: entodata
+lastStartTimestamp: '2026-10-22T17:23:25.554-07:00'
+machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
+metadata:
+  fingerprint: QirlaKwlK84=
+  kind: compute#metadata
+name: vm-ventas-1
+networkInterfaces:
+- fingerprint: QFSP3yi20rw=
+  kind: compute#networkInterface
+  name: nic0
+  network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+  networkIP: 10.10.0.66
+  stackType: IPV4_ONLY
+  subnetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ventas
+resourceStatus:
+  effectiveInstanceMetadata:
+    vmDnsSettingMetadataValue: ZonalOnly
+satisfiesPzi: true
+scheduling:
+  automaticRestart: true
+  onHostMaintenance: MIGRATE
+  preemptible: false
+  provisioningModel: STANDARD
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/instances/vm-ventas-1
+shieldedInstanceConfig:
+  enableIntegrityMonitoring: true
+  enableSecureBoot: true
+  enableVtpm: true
+shieldedInstanceIntegrityPolicy:
+  updateAutoLearnPolicy: true
+startRestricted: false
+status: RUNNING
+tags:
+  fingerprint: RJBbSDEzqtw=
+  items:
+  - ventas
+zone: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a
+---
+canIpForward: false
+cpuPlatform: Intel Broadwell
+creationTimestamp: '2026-10-22T17:23:30.990-07:00'
+deletionProtection: false
+disks:
+- architecture: X86_64
+  autoDelete: true
+  boot: true
+  deviceName: persistent-disk-0
+  diskSizeGb: '10'
+  guestOsFeatures:
+  - type: UEFI_COMPATIBLE
+  - type: VIRTIO_SCSI_MULTIQUEUE
+  - type: GVNIC
+  - type: SEV_CAPABLE
+  - type: SEV_LIVE_MIGRATABLE_V2
+  - type: SUSPEND_SAFE_FPR
+  index: 0
+  interface: SCSI
+  kind: compute#attachedDisk
+  licenses:
+  - https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm
+  mode: READ_WRITE
+  source: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/disks/vm-ventas-2
+  type: PERSISTENT
+fingerprint: AF-8qamGYqo=
+id: '2905304031674439661'
+kind: compute#instance
+labelFingerprint: PDmBc6F9pJo=
+labels:
+  fase: '1'
+  proyecto: entodata
+lastStartTimestamp: '2026-10-22T17:23:43.057-07:00'
+machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
+metadata:
+  fingerprint: QirlaKwlK84=
+  kind: compute#metadata
+name: vm-ventas-2
+networkInterfaces:
+- fingerprint: 8TDpSPRzGos=
+  kind: compute#networkInterface
+  name: nic0
+  network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+  networkIP: 10.10.0.67
+  stackType: IPV4_ONLY
+  subnetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-ventas
+resourceStatus:
+  effectiveInstanceMetadata:
+    vmDnsSettingMetadataValue: ZonalOnly
+satisfiesPzi: true
+scheduling:
+  automaticRestart: true
+  onHostMaintenance: MIGRATE
+  preemptible: false
+  provisioningModel: STANDARD
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/instances/vm-ventas-2
+shieldedInstanceConfig:
+  enableIntegrityMonitoring: true
+  enableSecureBoot: true
+  enableVtpm: true
+shieldedInstanceIntegrityPolicy:
+  updateAutoLearnPolicy: true
+startRestricted: false
+status: RUNNING
+tags:
+  fingerprint: RJBbSDEzqtw=
+  items:
+  - ventas
+zone: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a
+---
+canIpForward: false
+cpuPlatform: Intel Broadwell
+creationTimestamp: '2026-10-22T17:23:49.408-07:00'
+deletionProtection: false
+disks:
+- architecture: X86_64
+  autoDelete: true
+  boot: true
+  deviceName: persistent-disk-0
+  diskSizeGb: '10'
+  guestOsFeatures:
+  - type: UEFI_COMPATIBLE
+  - type: VIRTIO_SCSI_MULTIQUEUE
+  - type: GVNIC
+  - type: SEV_CAPABLE
+  - type: SEV_LIVE_MIGRATABLE_V2
+  - type: SUSPEND_SAFE_FPR
+  index: 0
+  interface: SCSI
+  kind: compute#attachedDisk
+  licenses:
+  - https://www.googleapis.com/compute/v1/projects/debian-cloud/global/licenses/debian-12-bookworm
+  mode: READ_WRITE
+  source: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/disks/vm-visitas-1
+  type: PERSISTENT
+fingerprint: lOnChLVLYaY=
+id: '2809775454976153594'
+kind: compute#instance
+labelFingerprint: PDmBc6F9pJo=
+labels:
+  fase: '1'
+  proyecto: entodata
+lastStartTimestamp: '2026-10-22T17:24:00.973-07:00'
+machineType: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/machineTypes/e2-micro
+metadata:
+  fingerprint: QirlaKwlK84=
+  kind: compute#metadata
+name: vm-visitas-1
+networkInterfaces:
+- fingerprint: lmtrTwsVWsI=
+  kind: compute#networkInterface
+  name: nic0
+  network: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/global/networks/entodata-vpc
+  networkIP: 10.10.0.2
+  stackType: IPV4_ONLY
+  subnetwork: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/regions/us-central1/subnetworks/subnet-visitas
+resourceStatus:
+  effectiveInstanceMetadata:
+    vmDnsSettingMetadataValue: ZonalOnly
+satisfiesPzi: true
+scheduling:
+  automaticRestart: true
+  onHostMaintenance: MIGRATE
+  preemptible: false
+  provisioningModel: STANDARD
+selfLink: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a/instances/vm-visitas-1
+shieldedInstanceConfig:
+  enableIntegrityMonitoring: true
+  enableSecureBoot: true
+  enableVtpm: true
+shieldedInstanceIntegrityPolicy:
+  updateAutoLearnPolicy: true
+startRestricted: false
+status: RUNNING
+tags:
+  fingerprint: ZCsTqsbBzuk=
+  items:
+  - visitas
+zone: https://www.googleapis.com/compute/v1/projects/jf-redes-mcp-2026/zones/us-central1-a
