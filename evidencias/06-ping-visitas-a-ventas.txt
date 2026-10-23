@@ -1,9 +1,9 @@
-# EntoData - Fase 1 | 2026-10-23 00:25:44 UTC
+# EntoData - Fase 1 | 2026-10-23 01:08:20 UTC
 # VM: vm-visitas-1  (zona us-central1-a, proyecto jf-redes-mcp-2026)
 $ ping -c 4 -W 2 10.10.0.66 || echo 'RESULTADO: sin respuesta (bloqueado por firewall)'
 PING 10.10.0.66 (10.10.0.66) 56(84) bytes of data.
 
 --- 10.10.0.66 ping statistics ---
-4 packets transmitted, 0 received, 100% packet loss, time 3063ms
+4 packets transmitted, 0 received, 100% packet loss, time 3071ms
 
 RESULTADO: sin respuesta (bloqueado por firewall)

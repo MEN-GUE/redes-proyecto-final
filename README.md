@@ -55,11 +55,13 @@ cp .env.example .env               # y poner el PROJECT_ID propio
 ./infra/gcp/04-instancias.sh
 ./infra/gcp/05-pruebas.sh          # deja las salidas en evidencias/
 ./infra/gcp/06-exportar-config.sh  # deja la configuración en config/
+./infra/gcp/97-encender.sh         # enciende las VMs (para demos posteriores)
 ./infra/gcp/98-apagar.sh           # detiene las VMs al terminar
 ./infra/gcp/99-eliminar.sh         # borra todo (pide confirmación)
 ```
 
 Todos los scripts son idempotentes: si un recurso ya existe, no lo vuelven a crear.
+La guía paso a paso para la presentación está en [TUTORIAL.md](TUTORIAL.md).
 
 ## Resultados
 
